@@ -1,0 +1,477 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Scalis — Taller de telefonía · Reparación y venta</title>
+  <meta name="description" content="Scalis: taller especializado en reparación de teléfonos y venta de equipos nuevos y reacondicionados. Diagnóstico gratis, garantía real, servicio en el día.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Unbounded:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Capa de imagen de fondo transparente -->
+  <div class="bg-blueprint" aria-hidden="true"></div>
+
+  <div class="progress" id="progress"></div>
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- ============ NAV ============ -->
+  <nav class="nav" id="nav">
+    <a href="#top" class="brand" aria-label="Scalis inicio">SCALIS<span class="dot">.</span></a>
+    <ul class="nav-links">
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#tienda">Tienda</a></li>
+      <li><a href="#proceso">Proceso</a></li>
+      <li><a href="#opiniones">Opiniones</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+    <a href="#contacto" class="btn btn-lime nav-cta"><span>Cita rápida</span></a>
+    <button class="burger" id="burger" aria-label="Menú" aria-expanded="false">
+      <i></i><i></i><i></i>
+    </button>
+  </nav>
+
+  <!-- mobile menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#servicios"><span>Servicios</span><small>01</small></a>
+    <a href="#tienda"><span>Tienda</span><small>02</small></a>
+    <a href="#proceso"><span>Proceso</span><small>03</small></a>
+    <a href="#opiniones"><span>Opiniones</span><small>04</small></a>
+    <a href="#contacto"><span>Contacto</span><small>05</small></a>
+  </div>
+
+  <!-- ============ HERO ============ -->
+  <header class="hero" id="top">
+    <div class="hero-watermark" id="heroWatermark" aria-hidden="true">REPAIR</div>
+
+    <div class="hero-left">
+      <p class="eyebrow reveal">Taller de telefonía · Microelectrónica</p>
+      <h1 class="reveal" style="--d:.08s">
+        Tu móvil,<br>
+        <span class="outline">roto o viejo,</span><br>
+        <span class="accent">resuelto hoy.</span>
+      </h1>
+      <p class="hero-sub reveal" style="--d:.16s">
+        Reparación técnica con <strong>garantía por escrito</strong> y venta de equipos
+        nuevos y reacondicionados con verificación completa.
+        <strong>Diagnóstico gratis</strong>, presupuesto sin compromiso.
+      </p>
+      <div class="hero-ctas reveal" style="--d:.24s">
+        <a href="#contacto" class="btn btn-lime"><span>Pedir cita</span></a>
+        <a href="#tienda" class="btn btn-ghost">Ver tienda</a>
+      </div>
+      <div class="hero-stats reveal" style="--d:.32s">
+        <div class="stat"><b data-count="4800">0</b><span>Reparaciones</span></div>
+        <div class="stat"><b><em data-count="98">0</em>%</b><span>Éxito técnico</span></div>
+        <div class="stat"><b><em data-count="6">0</em>/7</b><span>Días activos</span></div>
+      </div>
+    </div>
+
+    <div class="hero-right reveal" style="--d:.2s">
+      <div class="hero-glow-orb" aria-hidden="true"></div>
+      <div class="hero-frame transparent-stage">
+        <!-- Usa aquí tu PNG recortado sin fondo -->
+        <img src="assets/hero-repair.png" alt="Smartphone abierto mostrando componentes internos en el taller Scalis">
+        <div class="scan-line" aria-hidden="true"></div>
+      </div>
+
+      <div class="rot-badge" aria-hidden="true">
+        <svg viewBox="0 0 100 100">
+          <defs>
+            <path id="circ" d="M 50,50 m -38,0 a 38,38 0 1,1 76,0 a 38,38 0 1,1 -76,0"/>
+          </defs>
+          <text fill="#8b909b" font-size="10.5" letter-spacing="3.2" font-family="Space Grotesk, sans-serif">
+            <textPath href="#circ">GARANTÍA REAL · PIEZAS VERIFICADAS · </textPath>
+          </text>
+        </svg>
+        <div class="core">S.</div>
+      </div>
+
+      <div class="ticket">
+        <div class="pulse"></div>
+        <div>
+          <b>Taller abierto</b>
+          <span>Diagnóstico en el acto</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ TICKER ============ -->
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker-track" id="tickerTrack">
+      <span>Pantallas OLED <i>◆</i></span>
+      <span>Baterías 100% <i>◆</i></span>
+      <span>Microsoldadura <i>◆</i></span>
+      <span>Daños por agua <i>◆</i></span>
+      <span>Recuperación de datos <i>◆</i></span>
+      <span>Plan Renove <i>◆</i></span>
+      <span>Reacondicionados A+ <i>◆</i></span>
+      <span>Pantallas OLED <i>◆</i></span>
+      <span>Baterías 100% <i>◆</i></span>
+      <span>Microsoldadura <i>◆</i></span>
+      <span>Daños por agua <i>◆</i></span>
+      <span>Recuperación de datos <i>◆</i></span>
+      <span>Plan Renove <i>◆</i></span>
+      <span>Reacondicionados A+ <i>◆</i></span>
+    </div>
+  </div>
+
+  <!-- ============ SERVICES ============ -->
+  <section class="section" id="servicios">
+    <div class="section-head">
+      <div>
+        <p class="section-label reveal scramble">01 — Servicios</p>
+        <h2 class="section-title reveal" style="--d:.08s">Todo lo que le pasa<br>a tu teléfono, <span class="outline">aquí se arregla</span></h2>
+      </div>
+      <p class="section-note reveal" style="--d:.16s">
+        De la pantalla estrellada al software caprichoso. Trabajamos iPhone, Samsung,
+        Xiaomi, Google y todas las marcas principales.
+      </p>
+    </div>
+
+    <div class="services-grid">
+      <article class="service-card spotlight reveal">
+        <div class="service-icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6">
+            <rect x="14" y="4" width="20" height="40" rx="4"/>
+            <path d="M20 10h8M24 38v.5"/>
+            <path d="M18 22l4 4 8-9" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <h3>Pantallas y cristal</h3>
+        <p>Sustitución de pantalla completa o solo cristal. Calidad original-equivalente, probada pieza a pieza antes de montarla.</p>
+        <div class="service-tags"><i>iPhone</i><i>Samsung</i><i>Xiaomi</i></div>
+      </article>
+
+      <article class="service-card spotlight reveal" style="--d:.08s">
+        <div class="service-icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6">
+            <rect x="12" y="8" width="24" height="32" rx="4"/>
+            <path d="M20 24h8M24 20v8" stroke-linecap="round"/>
+            <path d="M36 18v12" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <h3>Baterías</h3>
+        <p>Tu móvil ya no dura ni medio día. Cambiamos la batería en el día, con ciclos reales medidos antes y después del cambio.</p>
+        <div class="service-tags"><i>En el día</i><i>Medición real</i></div>
+      </article>
+
+      <article class="service-card spotlight reveal" style="--d:.16s">
+        <div class="service-icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6">
+            <path d="M10 28c4-10 10-16 14-16s10 6 14 16" stroke-linecap="round"/>
+            <path d="M6 32c5-12 13-19 18-19s13 7 18 19" stroke-linecap="round" opacity=".45"/>
+            <circle cx="24" cy="34" r="3"/>
+          </svg>
+        </div>
+        <h3>Daños por agua</h3>
+        <p>Se cayó en la piscina o bajo la lluvia. Limpieza ultrasónica de placa y diagnóstico honesto: te decimos si vale la pena.</p>
+        <div class="service-tags"><i>Ultrasónico</i><i>Diagnóstico claro</i></div>
+      </article>
+
+      <article class="service-card spotlight reveal">
+        <div class="service-icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6">
+            <circle cx="24" cy="24" r="14"/>
+            <path d="M24 14v10l7 5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <h3>Micros y altavoces</h3>
+        <p>No te escuchan, no escuchas nada o el audio suena raro. Reparamos componentes internos sin cambiar toda la placa.</p>
+        <div class="service-tags"><i>Audible</i><i>Micrófono</i></div>
+      </article>
+
+      <article class="service-card spotlight reveal" style="--d:.08s">
+        <div class="service-icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6">
+            <path d="M16 14l-8 10 8 10M32 14l8 10-8 10" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M27 10l-6 28" stroke-linecap="round" opacity=".5"/>
+          </svg>
+        </div>
+        <h3>Software y datos</h3>
+        <p>Bloqueos, virus, actualizaciones fallidas o recuperación de fotos. Resolvemos el sistema y salvamos lo que importa.</p>
+        <div class="service-tags"><i>Respaldo</i><i>Desbloqueo</i></div>
+      </article>
+
+      <article class="service-card spotlight reveal" style="--d:.16s">
+        <div class="service-icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6">
+            <rect x="8" y="14" width="32" height="20" rx="3"/>
+            <circle cx="24" cy="24" r="5"/>
+            <path d="M34 19h.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <h3>Cámaras y conectores</h3>
+        <p>Fotos borrosas, cámara que no abre, no carga o no carga bien. Reparamos módulos y puertos con precisión de microelectrónica.</p>
+        <div class="service-tags"><i>Cámara</i><i>Puerto USB-C</i></div>
+      </article>
+    </div>
+
+    <div class="services-feature reveal">
+      <div class="feature-media">
+        <img src="assets/detail-screen.png" alt="Detalle de reparación de pantalla sobre mesa técnica">
+      </div>
+      <div class="copy">
+        <h3>Si no lo podemos arreglar,<br><em>te lo decimos.</em></h3>
+        <p>Nada de "probamos y a ver qué pasa". Cada reparación empieza con un diagnóstico
+        escrito y un precio cerrado. Si el daño no compensa, te ayudamos a vender el equipo
+        o a conseguir uno nuevo aquí mismo.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SALES ============ -->
+  <section class="section sales" id="tienda">
+    <div class="section-head">
+      <div>
+        <p class="section-label reveal scramble">02 — Tienda</p>
+        <h2 class="section-title reveal" style="--d:.08s">Equipos que salen<br><span class="outline">de nuestro propio banco</span></h2>
+      </div>
+      <p class="section-note reveal" style="--d:.16s">
+        Cada equipo pasa por las mismas manos que reparan las averías: batería medida,
+        pantalla probada, cámara verificada. Lo que no aprueba, no se vende.
+      </p>
+    </div>
+
+    <div class="sales-grid">
+      <article class="product-card tilt reveal">
+        <div class="product-media">
+          <span class="product-tag lime">Nuevo</span>
+          <img src="assets/device-portrait.png" alt="Smartphone nuevo en exhibición">
+        </div>
+        <div class="product-body">
+          <h3>Última generación</h3>
+          <p>Los lanzamientos actuales de las grandes marcas, sellados y con factura.
+          Consúltanos disponibilidad y precio del momento.</p>
+          <div class="product-foot">
+            <span class="price-hint">Precio en tienda</span>
+            <a href="#contacto">Preguntar
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 8h10M9 4l4 4-4 4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card tilt reveal" style="--d:.08s">
+        <div class="product-media">
+          <span class="product-tag">Reacondicionado</span>
+          <img src="assets/glow-touch.png" alt="Smartphone reacondicionado encendido">
+        </div>
+        <div class="product-body">
+          <h3>Renovados A+</h3>
+          <p>Equipos de segunda mano inspeccionados en 24 puntos: batería &gt;85%, pantalla
+          sin defectos, cámaras perfectas. Garantía incluida.</p>
+          <div class="product-foot">
+            <span class="price-hint">Mejor relación</span>
+            <a href="#contacto">Ver stock
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 8h10M9 4l4 4-4 4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <article class="tradein-card tilt reveal" style="--d:.16s">
+        <div>
+          <div class="big-arrow" aria-hidden="true">⇄</div>
+          <h3>Tu viejo<br>cambia a nuevo</h3>
+        </div>
+        <div>
+          <p>Nos llevas tu equipo actual —reparado o roto— y te damos precio al instante.
+          Ese descuento se aplica directo sobre el nuevo que te lleves hoy.</p>
+          <a href="#contacto" class="btn btn-lime"><span>Valorar mi equipo</span></a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ PROCESS ============ -->
+  <section class="section" id="proceso">
+    <div class="section-head">
+      <div>
+        <p class="section-label reveal scramble">03 — Proceso</p>
+        <h2 class="section-title reveal" style="--d:.08s">De tu mano<br>a <span class="outline">manos expertas</span></h2>
+      </div>
+      <p class="section-note reveal" style="--d:.16s">
+        Cuatro pasos, cero sorpresas. Sabes qué pasará con tu teléfono antes de que
+        nadie lo abra.
+      </p>
+    </div>
+
+    <div class="process-steps">
+      <div class="step reveal">
+        <span class="num">01</span>
+        <h3>Llegas</h3>
+        <p>Pasa por el taller o pide cita online. Sin esperas eternas: agenda por franjas.</p>
+      </div>
+      <div class="step reveal" style="--d:.08s">
+        <span class="num">02</span>
+        <h3>Diagnóstico</h3>
+        <p>Revisión completa frente a ti. Presupuesto cerrado y por escrito antes de tocar nada.</p>
+      </div>
+      <div class="step reveal" style="--d:.16s">
+        <span class="num">03</span>
+        <h3>Reparación</h3>
+        <p>Piezas verificadas, herramientas de precisión y control de calidad final.</p>
+      </div>
+      <div class="step reveal" style="--d:.24s">
+        <span class="num">04</span>
+        <h3>Garantía</h3>
+        <p>Te vas con el ticket de garantía. Si algo falla, volvemos a mirarlo sin coste.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ STATEMENT ============ -->
+  <section class="statement">
+    <div class="statement-inner">
+      <h2 class="reveal">Garantía<br><span class="stroke">por escrito.</span><br>Nunca a ciegas.</h2>
+      <div class="statement-side reveal" style="--d:.12s">
+        <p>Cada reparación sale del banco con una ficha de pruebas: pantalla, batería,
+        cámara, micrófono, carga y antenas. Si no pasa la ficha, no sale.</p>
+        <ul class="mini-list">
+          <li>Piezas con trazabilidad</li>
+          <li>Precio cerrado antes de empezar</li>
+          <li>Repuesto gratis si falla la garantía</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TESTIMONIALS ============ -->
+  <section class="section" id="opiniones">
+    <div class="section-head">
+      <div>
+        <p class="section-label reveal scramble">04 — Opiniones</p>
+        <h2 class="section-title reveal" style="--d:.08s">Lo que dice<br><span class="outline">quien vuelve</span></h2>
+      </div>
+    </div>
+
+    <div class="quotes-grid">
+      <article class="quote-card reveal">
+        <blockquote>Me dijeron que la placa estaba quemada en otro sitio. En Scalis la
+        repararon por una fracción de lo que me pedían y el teléfono sigue impecable.</blockquote>
+        <div class="quote-meta">
+          <div class="quote-avatar">MR</div>
+          <div><b>Marta R.</b><span>iPhone 13 · Placa</span></div>
+        </div>
+      </article>
+
+      <article class="quote-card reveal" style="--d:.08s">
+        <blockquote>Vendí mi Samsung viejo y me llevo un renovado A+ el mismo día.
+        El proceso fue transparente: vi cada prueba antes de pagar.</blockquote>
+        <div class="quote-meta">
+          <div class="quote-avatar">DL</div>
+          <div><b>Diego L.</b><span>Compra-venta</span></div>
+        </div>
+      </article>
+
+      <article class="quote-card reveal" style="--d:.16s">
+        <blockquote>Pantalla rota un domingo, lista el lunes a primera hora. Y encima
+        me limpiaron el puerto de carga gratis. Volveré siempre aquí.</blockquote>
+        <div class="quote-meta">
+          <div class="quote-avatar">AC</div>
+          <div><b>Ana C.</b><span>Pantalla · Express</span></div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section contact" id="contacto">
+    <div class="section-head">
+      <div>
+        <p class="section-label reveal scramble">05 — Contacto</p>
+        <h2 class="section-title reveal" style="--d:.08s">Cuéntanos qué<br><span class="outline">le pasa</span></h2>
+      </div>
+      <p class="section-note reveal" style="--d:.16s">
+        Escríbenos y te respondemos con disponibilidad y presupuesto orientativo.
+        O entra directamente: el café está hecho.
+      </p>
+    </div>
+
+    <div class="contact-grid">
+      <form class="form-card reveal" id="quoteForm" novalidate>
+        <div class="form-row">
+          <div class="field">
+            <label for="f-name">Nombre</label>
+            <input id="f-name" name="name" type="text" placeholder="Tu nombre" required>
+          </div>
+          <div class="field">
+            <label for="f-phone">Teléfono</label>
+            <input id="f-phone" name="phone" type="tel" placeholder="600 000 000" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="field">
+            <label for="f-device">Equipo</label>
+            <input id="f-device" name="device" type="text" placeholder="Ej. iPhone 14, Galaxy S22…">
+          </div>
+          <div class="field">
+            <label for="f-service">Servicio</label>
+            <select id="f-service" name="service">
+              <option value="reparacion">Reparación</option>
+              <option value="compra">Comprar equipo</option>
+              <option value="venta">Vender / valorar mi equipo</option>
+              <option value="otro">Otro</option>
+            </select>
+          </div>
+        </div>
+        <div class="field">
+          <label for="f-msg">¿Qué le pasa?</label>
+          <textarea id="f-msg" name="message" placeholder="Pantalla rota, no carga, se mojó…" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn btn-lime form-submit"><span>Enviar solicitud</span></button>
+      </form>
+
+      <div class="contact-info">
+        <div class="info-block reveal" style="--d:.08s">
+          <h4>Horario</h4>
+          <ul class="hours">
+            <li><b>Lun – Vie</b><span>9:30 – 20:00</span></li>
+            <li><b>Sábado</b><span>10:00 – 15:00</span></li>
+            <li><b>Domingo</b><span>Cerrado</span></li>
+          </ul>
+        </div>
+        <div class="info-block reveal" style="--d:.16s">
+          <h4>Dónde estamos</h4>
+          <p>Taller central · zona centro<br>Pide indicaciones exactas al escribirnos.</p>
+        </div>
+        <div class="info-block reveal" style="--d:.24s">
+          <h4>Directo</h4>
+          <button type="button" class="contact-big" id="bigPhone" data-phone="+34 600 000 000" title="Haz clic para ver y copiar teléfono">Llámanos ↗</button>
+          <p style="margin-top:14px;">Urgencias de pantalla y batería:<br>atención sin cita en horario de apertura.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="footer-word" id="footerWord" aria-hidden="true">SCALIS<em>.</em></div>
+    <div class="footer-row">
+      <span>© <span id="year"></span> Scalis — Taller de telefonía</span>
+      <div class="footer-links">
+        <a href="#servicios">Servicios</a>
+        <a href="#tienda">Tienda</a>
+        <a href="#proceso">Proceso</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+      <span>Reparado con precisión.</span>
+    </div>
+  </footer>
+
+  <!-- toast -->
+  <div class="toast" id="toast" role="status" aria-live="polite">
+    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M3 9.5l4 4 8-9" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <span id="toastMsg">Solicitud enviada</span>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
